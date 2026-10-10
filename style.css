@@ -1,0 +1,90 @@
+/* ---------- Baseball Color Pallette ---------- */
+
+:root {
+    --grass: #294b35;
+    --grass-light: #3c6546;
+    --dirt: #a65f42;
+    --leather: #65452f;
+    --wood: #392b22;
+
+    --paper: #f3eddf;
+    --paper-dark: #e4dac6;
+    --ink: #252d27;
+    --ink-muted: #687066;
+
+    --border: #c9bea9;
+    --white: #fffdf7;
+}
+
+/* ---------- Page Foundation ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    min-height: 100vh;
+
+    background-color: var(--wood);
+    color: var(--ink);
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Main Game Surface ---------- */
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+header {
+    padding: 24px 28px;
+    background-color: var(--paper);
+    border-bottom: 4px solid var(--dirt);
+    border-radius: 12px 12px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--grass);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+}
+
+main {
+    padding: 24px;
+    background-color: var(--paper);
+}
+
+footer {
+    padding: 18px 24px;
+    background-color: var(--paper-dark);
+    border-top: 1px solid var(--border);
+    border-radius: 0 0 12px 12px;
+    color: var(--ink-muted);
+}
+
+/* ---------- Shared section styling ---------- */
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--grass);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+p {
+    line-height: 1.5;
+}
